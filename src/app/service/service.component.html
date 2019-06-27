@@ -1,0 +1,9 @@
+<div><button (click)="getUser()">Get User From Service</button>
+    <ul *ngIf="user">
+        <li *ngFor="let user of user.data">
+          <div>{{user.id}} {{user.first_name}}
+              <a [routerLink]="['/view',user.id]"> View User</a>
+          </div>
+        </li>
+      </ul>
+</div>
