@@ -10,6 +10,16 @@ import { ServiceComponent } from './service/service.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { ReverseStr } from './reverse-str.pipe';
 import { ViewComponent } from './view/view.component';
+import { ServicessubComponent } from './servicessub/servicessub.component';
+import { ServicescontentComponent } from './servicescontent/servicescontent.component';
+import { CustomformComponent } from './customform/customform.component';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ShowhideDirective } from './showhide.directive';
+import { CustomdirectivesComponent } from './customdirectives/customdirectives.component';
+import { Lazyload1Component } from './lazyload1/lazyload1.component';
+import { Lazyload2Component } from './lazyload2/lazyload2.component';
+
+
 
 @NgModule({
   declarations: [
@@ -19,12 +29,20 @@ import { ViewComponent } from './view/view.component';
     ServiceComponent,
     PipeComponent,
     ReverseStr,
-    ViewComponent
+    ViewComponent,
+    ServicessubComponent,
+    ServicescontentComponent,
+    CustomformComponent,
+    ShowhideDirective,
+    CustomdirectivesComponent,
+    Lazyload1Component,
+    Lazyload2Component
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
